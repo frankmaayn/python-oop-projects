@@ -14,20 +14,18 @@ def newAccount(accountNumber, name, balance, password):
         account0Name = name
         account0Balance = balance
         account0Password = password
+        print('Account has been created!')
     
     if accountNumber == 1:
         account1Name = name
-        account0Balance = balance
+        account1Balance = balance
         account1Password = password
-    
-    print('Account has been created!')
+        print('Account has been created!')
 
 
 def show():
     global account0Name, account0Balance, account0Password
     global account1Name, account1Balance, account1Password
-
-    print('Test',account1Name)
 
     if account0Name != '':
         print('    Name: ',account0Name)
@@ -126,8 +124,8 @@ def withdraw(accountNumber, amountToWithdraw, password):
 
 
 
-newAccount('0','Joe',100,'soup')
-newAccount('1','Sam',100,'soup')
+newAccount(0,'Joe',100,'soup')
+newAccount(1,'Sam',100,'soup')
 
 while True:
     print()
